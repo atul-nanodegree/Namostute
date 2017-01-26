@@ -57,22 +57,27 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void setupTabIcons() {
-        mTabLayout.getTabAt(0).setText("Bhajan");
-        mTabLayout.getTabAt(1).setText("Chalisa");
-        mTabLayout.getTabAt(2).setText("Aarti");
-        mTabLayout.getTabAt(3).setText("Mantr");
-        mTabLayout.getTabAt(4).setText("Vrat Katha");
-        mTabLayout.getTabAt(5).setText("Pooja vidhi");
-        mTabLayout.getTabAt(6).setText("Upaay/Totke");
-        mTabLayout.getTabAt(7).setText("TV Serials");
-        mTabLayout.getTabAt(8).setText("Devotional world");
-        mTabLayout.getTabAt(9).setText("Shabad Gurubani");
-        mTabLayout.getTabAt(10).setText("Bhakti sagar");
-        mTabLayout.getTabAt(11).setText("Islamic devotional");
-        mTabLayout.getTabAt(12).setText("Sadhguru");
-        mTabLayout.getTabAt(13).setText("Brahma Kumari");
-        mTabLayout.getTabAt(14).setText("The Art of living");
-
+        String tabHeaderArray[] = getResources().getStringArray(R.array.tab_header);
+        for (int i = 0; i < tabHeaderArray.length; i++) {
+            String text = tabHeaderArray[i];
+            mTabLayout.getTabAt(i).setText(text);
+        }
+//        mTabLayout.getTabAt(0).setText("Bhajan");
+//        mTabLayout.getTabAt(1).setText("Chalisa");
+//        mTabLayout.getTabAt(2).setText("Aarti");
+//        mTabLayout.getTabAt(3).setText("Mantr");
+//        mTabLayout.getTabAt(4).setText("Vrat Katha");
+//        mTabLayout.getTabAt(5).setText("Pooja vidhi");
+//        mTabLayout.getTabAt(6).setText("Upaay/Totke");
+//        mTabLayout.getTabAt(7).setText("TV Serials");
+//        mTabLayout.getTabAt(8).setText("Devotional world");
+//        mTabLayout.getTabAt(9).setText("Shabad Gurubani");
+//        mTabLayout.getTabAt(10).setText("Bhakti sagar");
+//        mTabLayout.getTabAt(11).setText("Islamic devotional");
+//        mTabLayout.getTabAt(12).setText("Sadhguru");
+//        mTabLayout.getTabAt(13).setText("Brahma Kumari");
+//        mTabLayout.getTabAt(14).setText("The Art of living");
+//
 
 
     }
@@ -134,10 +139,10 @@ public class MainActivity extends AppCompatActivity
         adapter.addFrag(new CategoryFragment());
         adapter.addFrag(new CategoryFragment());
         adapter.addFrag(new CategoryFragment());
-        adapter.addFrag(new CategoryFragment());
-        adapter.addFrag(new CategoryFragment());
-        adapter.addFrag(new CategoryFragment());
-        adapter.addFrag(new CategoryFragment());
+//        adapter.addFrag(new CategoryFragment());
+//        adapter.addFrag(new CategoryFragment());
+//        adapter.addFrag(new CategoryFragment());
+//        adapter.addFrag(new CategoryFragment());
 
 
 

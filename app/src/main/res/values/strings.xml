@@ -1,8 +1,22 @@
 <resources>
-    <string name="app_name">Namostute</string>
+    <string name="app_name">नमोस्तुते Namostute</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string-array name="tab_header">
+        <item>चालीसा</item>
+        <item>आरती</item>
+        <item>मंत्र</item>
+        <item>व्रत कथा</item>
+        <item>पूजा विधि</item>
+        <item>भजन</item>
+        <item>उपाय / टोटके</item>
+        <item>टीवी सीरियल्स</item>
+        <item>डिवोशनल वर्ल्ड</item>
+        <item>शबद गुरुबानी</item>
+        <item>भक्ति सागर</item>
+    </string-array>
 </resources>
